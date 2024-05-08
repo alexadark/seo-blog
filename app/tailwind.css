@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply text-light bg-white font-body;
+    @apply text-black bg-white font-body;
   }
   h1,
   h2,
@@ -32,7 +32,7 @@
   }
 
   .content {
-    @apply prose text-lg text-light max-w-none prose-headings:text-primary prose-img:rounded-xl text-opacity-80 my-3 prose-pre:m-0 prose-pre:p-0 prose-pre:bg-transparent;
+    @apply prose text-lg text-black max-w-none prose-headings:text-primary prose-img:rounded-xl text-opacity-80 my-3 prose-pre:m-0 prose-pre:p-0 prose-pre:bg-transparent;
 
     & > pre {
       @apply p-0;

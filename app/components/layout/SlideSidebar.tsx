@@ -78,7 +78,7 @@ export const SlideSidebar = ({ ...props }) => {
                       "shadow-xl",
                       "p-10",
                       "bg-white ",
-                      "text-light"
+                      "text-black"
                     )}
                   >
                     <div className="flex justify-end mb-5">
