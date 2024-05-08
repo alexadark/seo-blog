@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         body: "Inter, sans-serif",
-        heading: "Inconsolata, monospace",
+        heading: "Inter, sans-serif",
       },
       fontWeight: {
         body: "400",
