@@ -36,7 +36,7 @@ export const Post = ({ blok }: PostStoryblok) => {
         </div>
         {image && (
           <img
-            src={`${image?.filename}/m/800x300/smart/filters:grayscale():quality(60)/`}
+            src={`${image?.filename}/m/800x400/smart/filters:quality(60)/`}
             alt={image?.alt}
           />
         )}

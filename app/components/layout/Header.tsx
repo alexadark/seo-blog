@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from "@remix-run/react";
 import { SlideSidebar } from "./SlideSidebar";
 import { Search } from "~/components/search";
+import { MainMenu } from "./MainMenu"; // Add this import
 import type { loader } from "~/root";
 
 export const Header = () => {
@@ -23,12 +24,15 @@ export const Header = () => {
   );
 
   return (
-    <header className="fixed top-0 z-40 flex-none w-full py-3 border-b border-dark-25 backdrop-filter backdrop-blur-lg bg-transparent">
+    <header className="fixed top-0 z-40 flex-none w-full py-3 border-b border-slate-300 backdrop-filter backdrop-blur-lg bg-transparent">
       <div className="max-w-site flex justify-between mx-auto align-center px-5">
         <Link prefetch="intent" to="/">
           {branding}
         </Link>
         <div className="flex justify-between gap-5">
+          <div className="hidden xl:flex">
+            <MainMenu />
+          </div>
           <SlideSidebar className="mt-2 xl:hidden" />
           <Search />
         </div>

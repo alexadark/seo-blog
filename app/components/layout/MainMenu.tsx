@@ -7,7 +7,7 @@ export const MainMenu = () => {
   let { headerNav: nav } = useLoaderData<typeof loader>();
 
   return (
-    <nav className="flex flex-col space-y-3" {...storyblokEditable(nav)}>
+    <nav className="flex space-x-2 items-center" {...storyblokEditable(nav)}>
       <NavLink prefetch="intent" to="/" className="menu-item">
         Home
       </NavLink>

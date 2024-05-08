@@ -55,7 +55,7 @@ export const PostsList = ({ grid, uuid }: PostsListType) => {
   };
   return (
     <div itemScope itemType="http://schema.org/CollectionPage">
-      <div className={grid ? "grid sm:grid-cols-2 gap-5" : ""}>
+      <div className={grid ? "grid sm:grid-cols-3 gap-5 px-20" : ""}>
         {posts?.map((p: PostStoryblok, index: number) => {
           return (
             <div key={p?.id} className="flex flex-col h-full">

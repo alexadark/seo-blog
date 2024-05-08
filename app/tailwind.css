@@ -58,10 +58,10 @@
 
 @layer components {
   .menu-item {
-    @apply hover:text-primary;
-    &.active {
-      @apply text-primary;
-    }
+    @apply inline-block mr-4; /* Display menu items inline with margin */
+  }
+  .menu-item.active {
+    @apply text-primary; /* Active state styling */
   }
   .button {
     @apply inline-block px-3 transition duration-500 text-white  bg-black hover:bg-slate-700;
