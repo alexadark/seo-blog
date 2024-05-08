@@ -22,7 +22,7 @@ export const SearchForm = () => {
         placeholder="Search..."
         className={clsx(
           "w-full h-12",
-          "bg-dark-50",
+          "bg-white",
           "border-0 border-l-8 border-teal-200 focus:border-secondary",
           "text-teal-100",
           "text-xl tracking-wide",

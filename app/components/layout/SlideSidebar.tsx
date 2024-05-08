@@ -47,7 +47,7 @@ export const SlideSidebar = ({ ...props }) => {
                 className={clsx(
                   "absolute inset-0",
                   "transition-opacity",
-                  "bg-dark-100 bg-opacity-80"
+                  "bg-white bg-opacity-80"
                 )}
               />
             </Transition.Child>
@@ -77,7 +77,7 @@ export const SlideSidebar = ({ ...props }) => {
                       "overflow-y-scroll",
                       "shadow-xl",
                       "p-10",
-                      "bg-dark-100 ",
+                      "bg-white ",
                       "text-light"
                     )}
                   >

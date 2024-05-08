@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply text-light bg-dark-100 font-body;
+    @apply text-light bg-white font-body;
   }
   h1,
   h2,
@@ -46,7 +46,7 @@
     }
   }
   blockquote {
-    @apply py-1 !text-secondary bg-dark-25 text-opacity-80 !border-secondary;
+    @apply py-1 !text-secondary bg-white text-opacity-80 !border-secondary;
   }
 }
 
@@ -64,6 +64,6 @@
     }
   }
   .button {
-    @apply inline-block px-3 py-1 transition duration-500 rounded-md hover:-translate-y-[2px] bg-dark-25 hover:text-secondary shadow-sm hover:shadow-secondary;
+    @apply inline-block px-3 py-1 transition duration-500 rounded-md hover:-translate-y-[2px] bg-white hover:text-secondary shadow-sm hover:shadow-secondary;
   }
 }

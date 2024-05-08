@@ -22,7 +22,7 @@ export const Search = () => {
   return (
     <>
       {isSearching && (
-        <div className="absolute inset-0 flex items-center justify-center w-full h-full bg-dark-100 overlay opacity-80">
+        <div className="absolute inset-0 flex items-center justify-center w-full h-full bg-white overlay opacity-80">
           <h3>Searching...</h3>
         </div>
       )}
@@ -56,7 +56,7 @@ export const Search = () => {
                 className={clsx(
                   "absolute inset-0",
                   "transition-opacity",
-                  "bg-dark-100 bg-opacity-80"
+                  "bg-white bg-opacity-80"
                 )}
               />
             </Transition.Child>
@@ -76,7 +76,7 @@ export const Search = () => {
                 <div
                   className={clsx(
                     "w-screen max-w-full",
-                    "bg-dark-50",
+                    "bg-white",
                     "px-10 py-5"
                   )}
                 >
