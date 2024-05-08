@@ -3,9 +3,9 @@
     {
       "name": "all-posts",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.833Z",
-      "updated_at": "2024-04-27T09:34:38.833Z",
-      "id": 5720397,
+      "created_at": "2024-05-08T13:27:19.386Z",
+      "updated_at": "2024-05-08T13:27:19.386Z",
+      "id": 5769995,
       "schema": {
         "headline": {
           "type": "text"
@@ -35,9 +35,9 @@
     {
       "name": "all-projects",
       "display_name": null,
-      "created_at": "2024-04-27T10:44:12.255Z",
-      "updated_at": "2024-04-27T10:51:59.153Z",
-      "id": 5720477,
+      "created_at": "2024-05-08T13:27:19.272Z",
+      "updated_at": "2024-05-08T13:27:19.272Z",
+      "id": 5769987,
       "schema": {
         "projects": {
           "type": "bloks",
@@ -66,9 +66,9 @@
     {
       "name": "author",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.914Z",
-      "updated_at": "2024-04-27T09:34:38.914Z",
-      "id": 5720402,
+      "created_at": "2024-05-08T13:27:19.328Z",
+      "updated_at": "2024-05-08T13:27:19.328Z",
+      "id": 5769991,
       "schema": {
         "avatar": {
           "type": "asset",
@@ -126,9 +126,9 @@
     {
       "name": "category",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.930Z",
-      "updated_at": "2024-04-27T09:34:38.930Z",
-      "id": 5720403,
+      "created_at": "2024-05-08T13:27:19.314Z",
+      "updated_at": "2024-05-08T13:27:19.314Z",
+      "id": 5769990,
       "schema": {
         "seo": {
           "type": "bloks",
@@ -189,9 +189,9 @@
     {
       "name": "config",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.766Z",
-      "updated_at": "2024-04-27T09:34:38.766Z",
-      "id": 5720393,
+      "created_at": "2024-05-08T13:27:19.445Z",
+      "updated_at": "2024-05-08T13:27:19.445Z",
+      "id": 5769999,
       "schema": {
         "robots_txt_content": {
           "type": "textarea",
@@ -322,9 +322,9 @@
     {
       "name": "content",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.899Z",
-      "updated_at": "2024-04-27T09:34:38.899Z",
-      "id": 5720401,
+      "created_at": "2024-05-08T13:27:19.235Z",
+      "updated_at": "2024-05-08T13:27:19.235Z",
+      "id": 5769986,
       "schema": {
         "text": {
           "translatable": true,
@@ -354,9 +354,9 @@
     {
       "name": "last-posts",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.817Z",
-      "updated_at": "2024-04-27T09:34:38.817Z",
-      "id": 5720396,
+      "created_at": "2024-05-08T13:27:19.401Z",
+      "updated_at": "2024-05-08T13:27:19.401Z",
+      "id": 5769996,
       "schema": {
         "headline": {
           "type": "text",
@@ -390,9 +390,9 @@
     {
       "name": "nav-item",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.882Z",
-      "updated_at": "2024-04-27T09:34:38.882Z",
-      "id": 5720400,
+      "created_at": "2024-05-08T13:27:19.342Z",
+      "updated_at": "2024-05-08T13:27:19.342Z",
+      "id": 5769992,
       "schema": {
         "link": {
           "translatable": true,
@@ -437,9 +437,9 @@
     {
       "name": "page",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.848Z",
-      "updated_at": "2024-04-27T09:34:38.848Z",
-      "id": 5720398,
+      "created_at": "2024-05-08T13:27:19.369Z",
+      "updated_at": "2024-05-08T13:27:19.369Z",
+      "id": 5769994,
       "schema": {
         "body": {
           "type": "bloks"
@@ -481,9 +481,9 @@
     {
       "name": "post",
       "display_name": "Post",
-      "created_at": "2024-04-27T09:34:38.801Z",
-      "updated_at": "2024-04-27T09:34:38.801Z",
-      "id": 5720395,
+      "created_at": "2024-05-08T13:27:19.416Z",
+      "updated_at": "2024-05-08T13:27:19.416Z",
+      "id": 5769997,
       "schema": {
         "headline": {
           "translatable": true,
@@ -574,9 +574,9 @@
     {
       "name": "project",
       "display_name": null,
-      "created_at": "2024-04-27T10:43:04.509Z",
-      "updated_at": "2024-04-27T10:43:44.543Z",
-      "id": 5720476,
+      "created_at": "2024-05-08T13:27:19.287Z",
+      "updated_at": "2024-05-08T13:27:19.287Z",
+      "id": 5769988,
       "schema": {
         "headline": {
           "type": "text"
@@ -584,11 +584,11 @@
         "image": {
           "type": "asset"
         },
-        "description": {
-          "type": "markdown"
-        },
         "url": {
           "type": "multilink"
+        },
+        "description": {
+          "type": "richtext"
         }
       },
       "image": null,
@@ -609,9 +609,9 @@
     {
       "name": "seo",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.783Z",
-      "updated_at": "2024-04-27T09:34:38.783Z",
-      "id": 5720394,
+      "created_at": "2024-05-08T13:27:19.431Z",
+      "updated_at": "2024-05-08T13:27:19.431Z",
+      "id": 5769998,
       "schema": {
         "title": {
           "translatable": true,
@@ -671,9 +671,9 @@
     {
       "name": "social-item",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.867Z",
-      "updated_at": "2024-04-27T09:34:38.867Z",
-      "id": 5720399,
+      "created_at": "2024-05-08T13:27:19.355Z",
+      "updated_at": "2024-05-08T13:27:19.355Z",
+      "id": 5769993,
       "schema": {
         "name": {
           "type": "text",
@@ -709,9 +709,9 @@
     {
       "name": "tag",
       "display_name": null,
-      "created_at": "2024-04-27T09:34:38.946Z",
-      "updated_at": "2024-04-27T09:34:38.946Z",
-      "id": 5720404,
+      "created_at": "2024-05-08T13:27:19.300Z",
+      "updated_at": "2024-05-08T13:27:19.300Z",
+      "id": 5769989,
       "schema": {
         "seo": {
           "type": "bloks",

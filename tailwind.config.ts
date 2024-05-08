@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const light = "#d8d7ed";
-const primary = "#f056c7";
+const primary = "#000";
 const secondary = "#58e6d9";
 const links = "#8b87ea";
 const dark = "#141127";

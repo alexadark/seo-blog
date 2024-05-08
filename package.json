@@ -6,7 +6,7 @@
   "scripts": {
     "build": "remix vite:build",
     "dev": "remix vite:dev",
-    "generate-sb-types": "storyblok pull-components --space=286655 && storyblok-generate-ts source=./components.286655.json target=./app/types/component-types-sb",
+    "generate-sb-types": "storyblok pull-components --space=288063 && storyblok-generate-ts source=./components.288063.json target=./app/types/component-types-sb",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "proxy": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
     "start": "remix-serve ./build/server/index.js",

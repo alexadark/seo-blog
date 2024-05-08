@@ -216,8 +216,8 @@ export interface PostStoryblok {
 export interface ProjectStoryblok {
   headline?: string;
   image?: AssetStoryblok;
-  description?: string;
   url?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  description?: RichtextStoryblok;
   _uid: string;
   component: "project";
   [k: string]: any;
