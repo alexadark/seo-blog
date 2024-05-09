@@ -58,7 +58,7 @@
 
 @layer components {
   .menu-item {
-    @apply inline-block mr-4; /* Display menu items inline with margin */
+    @apply inline-block text-[12px] uppercase font-bold; /* Display menu items inline with margin */
   }
   .menu-item.active {
     @apply text-primary; /* Active state styling */

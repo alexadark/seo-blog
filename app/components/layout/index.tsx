@@ -11,7 +11,7 @@ export const Layout = ({ children }: Props) => {
       <div>
         <Header />
         <div className="max-w-site mx-auto relative">
-          <main className="pt-20 pb-10 mx-auto max-w-full px-5">
+          <main className="pt-[120px] pb-10 mx-auto max-w-full px-5">
             {children}
           </main>
         </div>

@@ -58,7 +58,7 @@ const SearchResults = () => {
             <Link
               to={`/${page.full_slug}`}
               prefetch="intent"
-              className="text-links hover:text-secondary transition-colors duration-300 text-xl"
+              className="text-slate-700 hover:text-secondary transition-colors duration-300 text-xl"
             >
               {page.name}
             </Link>

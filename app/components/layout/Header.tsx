@@ -8,13 +8,15 @@ export const Header = () => {
   const { logo, blogTitle } = useLoaderData<typeof loader>();
 
   const title = (
-    <h1 className="my-0 text-3xl font-bold font-heading">{blogTitle}</h1>
+    <h1 className="my-0 text-3xl font-bold font-heading hidden md:flex">
+      {blogTitle}
+    </h1>
   );
   const logoImage = (
     <img
       src={logo.filename}
       alt={logo.alt}
-      className="h-8 w-8 mr-2 rounded-full border-2 border-secondary"
+      className="h-8 w-8 mr-2 rounded-full border-2 border-black "
     />
   );
   const branding = (
@@ -30,11 +32,11 @@ export const Header = () => {
           {branding}
         </Link>
         <div className="flex justify-between gap-5">
-          <div className="hidden xl:flex">
+          <div className="flex">
             <MainMenu />
           </div>
-          <SlideSidebar className="mt-2 xl:hidden" />
-          <Search />
+          {/* <SlideSidebar className="mt-2 xl:hidden" /> */}
+          {/* <Search /> */}
         </div>
       </div>
     </header>

@@ -26,43 +26,43 @@ export const Post = ({ blok }: PostStoryblok) => {
       <article
         {...storyblokEditable(blok)}
         key={blok._uid}
-        className="max-w-full xl:max-w-[760px] 2xl:max-w-content"
+        className="max-w-content mx-auto"
       >
-        <div className="flex flex-wrap justify-between align-middle mb-7">
-          <div className="mr-5 text-lg font-bold text-primary">
-            {format(new Date(publishDate), "MMMM dd, yyyy")}
-          </div>
-          <Categories categories={categories} className="space-x-2" />
-        </div>
         {image && (
           <img
-            src={`${image?.filename}/m/800x400/smart/filters:quality(60)/`}
+            src={`${image?.filename}/m/850x400/smart/filters:quality(60)/`}
             alt={image?.alt}
           />
         )}
         <h1>{headline}</h1>
+        <div className="flex flex-wrap justify-between align-middle mb-2">
+          <div className=" text-sm italic text-primary">
+            {format(new Date(publishDate), "MMMM dd, yyyy")}
+          </div>
+          <Categories categories={categories} className="space-x-2" />
+        </div>
         <Tags tags={tags} className="space-x-2" />
         <MDRenderer className="content">{md_content}</MDRenderer>
-        <div className="flex justify-center xl:hidden">
+        <div className="flex justify-center">
           <AuthorBox author={author} component={"author"} _uid={blok._uid} />
         </div>
         {url && <SocialShare url={url} />}
       </article>
-
+      {/*
       <aside className="fixed z-10 top-[4.6rem] bottom-0 right-[max(0px,calc(50%-45rem))] w-[19.5rem] py-6 px-8 overflow-y-auto hidden xl:block">
         <AuthorBox
           author={{ ...author, _uid: blok._uid }}
           component={"author"}
           _uid={blok._uid}
         />
-      </aside>
+      </aside> */}
 
-      <DisqusComments
+      {/* <DisqusComments
         shortname="remix-blog"
         identifier={id}
         title={name}
         url={`${typeof window !== "undefined" && window.location.href}`}
-      />
+      /> */}
     </>
   );
 };

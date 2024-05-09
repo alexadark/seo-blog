@@ -5,8 +5,8 @@ import { type loader } from "~/root";
 export const Footer = () => {
   const { footerText } = useLoaderData<typeof loader>();
   return (
-    <footer className="py-10 ">
-      <div className="max-w-content mx-auto px-5">
+    <footer className="py-10 bg-teal-500 text-white ">
+      <div className="max-w-site mx-auto px-5 ">
         <div>
           {render(footerText)} &copy; {new Date().getFullYear()}
         </div>

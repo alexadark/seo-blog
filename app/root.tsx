@@ -103,7 +103,7 @@ export const meta: MetaFunction = ({ data }: { data: any }) => {
       "script:ld+json": {
         "@context": "https://schema.org",
         "@type": "Organization",
-        url: `${data.siteUrl ? data.siteUrl : ""}`,
+        url: `${data?.siteUrl ? data?.siteUrl : ""}`,
       },
     },
   ];
