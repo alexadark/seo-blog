@@ -36,28 +36,10 @@ export const PostCard = ({ post, grid }: PostCardType) => {
 
   return (
     <article
-      className={`${
-        !grid && "mb-7"
-      } bg-white border border-dark-25  px-5 py-7 rounded-lg shadow-xl duration-500 transition-[box-shadow,transform] hover:shadow-dark-25  relative hover:-translate-y-1 flex flex-col h-full`}
+      className={`${!grid && "mb-7"}  p-3  flex flex-col h-full`}
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
-      <div
-        className={` ${
-          grid ? "space-y-3" : "flex flex-wrap"
-        } justify-between items-center gap-3 mb-4`}
-      >
-        <time
-          className="mr-5 text-lg font-bold text-primary"
-          itemProp="datePublished"
-          dateTime={format(new Date(date), "yyyy-MM-dd")}
-        >
-          {format(new Date(date), "MMMM dd, yyyy")}
-        </time>
-        <div className="">
-          <Categories categories={categories} />
-        </div>
-      </div>
       <LinkWrapper url={url?.url} slug={full_slug}>
         <div
           className={`${!grid && "md:flex justify-between gap-5"} flex-grow`}
@@ -72,24 +54,38 @@ export const PostCard = ({ post, grid }: PostCardType) => {
               <picture>
                 <source
                   media="(min-width: 768px)"
-                  srcSet={`${image?.filename}/m/400x200/smart/filters:quality(60)/`}
+                  srcSet={`${image?.filename}/m/400x250/smart/filters:quality(60)/`}
                   itemProp="contentUrl"
                 />
                 <img
                   src={`${image?.filename}/m/750x400/smart/filters:quality(60)/`}
                   alt={image?.alt}
-                  className="rounded-lg"
+                  className=""
                   itemProp="url"
                 />
               </picture>
               <meta itemProp="description" content={image?.alt} />
             </div>
           )}
+          <div className={` flex items-center gap-3 mt-2`}>
+            <time
+              className="mr-5 text-sm italic text-primary"
+              itemProp="datePublished"
+              dateTime={format(new Date(date), "yyyy-MM-dd")}
+            >
+              {format(new Date(date), "MMMM dd, yyyy")}
+            </time>
+          </div>
           <div>
-            <h2 className="font-bold text-2xl mb-2" itemProp="headline">
+            <h2 className="font-bold text-xl mb-2" itemProp="headline">
               {headline}
             </h2>
-            <p itemProp="description">{teaser}</p>
+            <p itemProp="description text-sm">{teaser}</p>
+            {categories.length ? (
+              <div className="mt-2">
+                <Categories categories={categories} />
+              </div>
+            ) : null}
           </div>
         </div>
       </LinkWrapper>

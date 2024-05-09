@@ -1,6 +1,5 @@
 import type { CategoryStoryblok } from "~/types";
 import { Link } from "@remix-run/react";
-import { FolderClosed } from "lucide-react";
 
 type CategoriesProps = {
   categories: CategoryStoryblok[];
@@ -9,10 +8,12 @@ type CategoriesProps = {
 export const Categories = ({ categories, ...props }: CategoriesProps) => {
   return (
     <div {...props} className="flex items-center space-x-2">
-      <FolderClosed className="text-xl text-secondary mr-2" />
+      {/* <FolderClosed className="text-sm text-black mr-2" /> */}
       {categories?.map((c: CategoryStoryblok) => (
         <Link prefetch="intent" to={`/${c.full_slug}`} key={c.id}>
-          <span className="button">{c.name}</span>
+          <span className="text-white bg-black text-sm px-2 py-1 hover:bg-slate-600 transition duration-300 block">
+            {c.name}
+          </span>
         </Link>
       ))}
     </div>
