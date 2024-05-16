@@ -36,7 +36,7 @@ export const PostCard = ({ post, grid }: PostCardType) => {
 
   return (
     <article
-      className={`${!grid && "mb-7"}  p-3  flex flex-col h-full`}
+      className={`${!grid && "mb-7"}    flex flex-col h-full`}
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
