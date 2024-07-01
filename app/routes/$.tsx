@@ -77,7 +77,6 @@ export const loader: LoaderFunction = async ({
     {
       blok: story,
       name: story.name,
-
       posts,
       total,
       perPage,
